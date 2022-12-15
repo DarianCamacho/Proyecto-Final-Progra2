@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Contac Form</title>
+        <meta name="description" content="Contac Form"/>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="styleSells.css"
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <section>
+          <h1>CONTACT</h1>
+          <div class="form">
+            <form method="POST" action="">
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <label for="name">Name</label>
+                <input type="text" name="name" maxlength="50" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ ]{3,23}" title="You must indicate your name correctly" required>
+              </div>
+
+              <div class="input-field">
+                <i class="fas fa-mobile-alt"></i>
+                <label for="Phone">Phone</label>
+                <input type="phone" name="Phone" maxlength="9" title="You must provide a valid phone number" required>
+              </div>
+
+              <div class="input-field">
+                <i class="fas fa-at"></i>
+                <label for="email">Email</label>
+                <input type="email" name="email" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="You must indicate a valid email address" required>
+              </div>
+
+              <div class="input-field">
+                <i class="fas fa-pen"></i>
+                <label for="message">What product are you interested in?</label>
+                <textarea name="message" rows="10" length="140" required></textarea>
+              </div>
+
+              <div class="btn-block">
+                <button class="btn" action="index.html" type="submit"><i class="fas fa-paper-plane"></i>SEND</button>
+              </div>
+
+            </form>
+          </div>
+        </section>
+    </body>
+</html>
